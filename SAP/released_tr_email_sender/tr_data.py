@@ -8,6 +8,7 @@ AGE_IN_DAYS = 1
 NO_DATA_MEETS_CRITERIA = [["No data selected", "", "", f"Either TR was released earlier than {AGE_IN_DAYS} day(s) ago or is in exceptions", "", "", ""]]
 CONFIG_FILE_IS_MISSING = [["Config file", "", "", "Please check the file is mainainted", "", "", ""]]
 
+
 class TRData:
 
     def __init__(self):
@@ -32,5 +33,3 @@ class TRData:
 
     def refresh(self):
         self.data = self.get_data()
-
-    
