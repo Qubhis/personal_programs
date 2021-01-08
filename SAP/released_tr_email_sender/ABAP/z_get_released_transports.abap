@@ -12,7 +12,7 @@ FUNCTION Z_GET_RELEASED_TRANSPORTS.
   " convert to strgin for SQL argument pass
   data(oldest_date_string) = |{ oldest_date_timestamp }|.
 
-  " get all TRs owned by me
+  " get all TRs owned by user calling this module
   SELECT e070~trkorr AS tr_number,
          e070a~reference AS export_datetime,
          e070~as4user AS owner,
@@ -27,7 +27,7 @@ FUNCTION Z_GET_RELEASED_TRANSPORTS.
       AND e070~as4user EQ @sy-uname
       AND e07t~langu EQ 'E'.
 
-
+  " convert to JSON string
   json_data = /ui2/cl_json=>serialize( data = released_transports ).
 
 
