@@ -3,8 +3,8 @@ import json
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
-from tr_data import TRData, NO_DATA_MEETS_CRITERIA
 
+from tr_data import TRData, NO_DATA_MEETS_CRITERIA
 from email_text import email_body_template
 from helpers import send_email
 
