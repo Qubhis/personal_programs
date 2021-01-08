@@ -9,3 +9,6 @@ Functionality of the program:
   4. Posibility to send email with one or more selected lines
   5. Once TR(s) are sent via email, they are added to exceptions
 
+![attach to session](img/GUI_none_to_display.jpg)
+
+![attach to session](img/GUI_TRs_listed.jpg)
